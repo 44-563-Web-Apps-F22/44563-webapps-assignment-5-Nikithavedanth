@@ -12,16 +12,36 @@
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
-        width: 150px;
+        width: 500px;
       }
       
       img:hover {
         box-shadow: 0 0 2px 1px blueviolet;
       }
-      img{
-        width: 400;
-        height: 400;
+      th:hover{
+          color:coral;
       }
+tr:hover{
+  background-color: blueviolet;
+}
+table, th, td {
+  border: 1px solid;
+  text-align: center;
+}
+        tr{
+  background-color:lightyellow;
+}
+th,td {
+    width:200px;
+    padding:0px 4px 4px 4px;
+    margin: -28px 0px -10px 100px;
+    background: lightblue;
+    border-top: 2px double #000;
+    border-right: 4px solid brown;
+    border-bottom: 8px double yellow;
+    border-left: 16px solid purple;
+ }
+
       </style>
 </head>
 <body>
@@ -47,11 +67,11 @@
     <p>The second row with insects name shrinks or breaks first. The reason is that  we are using grid class and it has only 6 rows which are filled.Our grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl). This means you can control container and column sizing and behavior by each breakpoint.<p>
       <div>
 
-        <img src="Diptera.jpg" class="img-fluid" width="500" height="500"  alt="Diptera">
-        <img src="Megaloptera.jpg"class="img-fluid" width="500" height="500"  alt="Megaloptera">
-        <img src="Horntail.jpg" class="img-fluid" width="500" height="500" alt="Horntail">
+        <img src="Diptera.jpg" class="img-fluid" max-width: 100%; height=auto  alt="Diptera">
+        <img src="Megaloptera.jpg"class="img-fluid" max-width: 100%; height=auto   alt="Megaloptera">
+        <img src="Horntail.jpg" class="img-fluid" max-width: 100%; height=auto alt="Horntail">
       </div>
-      <div>
+      <div class="container-fluid">
         <a target="_blank" href="Diptera.jpg">
         <img src="Diptera.jpg" class="img-thumbnail" alt="Diptera">
         </a>
@@ -62,6 +82,61 @@
         <img src="Horntail.jpg" class="img-thumbnail" alt="Horntail">
       </a>
       </div>
-
+      <table class="table table-striped table-bordered">
+        <caption>A Table for Insects</caption>
+        <thead>
+        <tr>
+          <th scope="col">SNo</th>
+          <th scope="col">Letter</th>
+          <th scope="col">Insects</th>
+          <th scope="col">City</th>
+          <th scope="col">River</th>
+        </tr>
+      </thead>
+      <tbody>
+          <tr>
+          <th scope="row">1</th>
+          <td class="table-info"style="color:darkcyan">M</td>
+          <td class="table-info"style="color:crimson">Megaloptera</td>
+          <td class="table-info"style="color:crimson">Melbourne</td>
+          <td class="table-info"style="color:crimson">Mackinaw River</td>
+        </tr>
+        <tr>
+          <th scope="row">2</th>
+          <td class="table-primary" style="color:darkcyan">A</td>
+          <td class="table-primary"style="color:cornflowerblue">Antlions</td>
+          <td class="table-primary"style="color:cornflowerblue">Amritsar</td>
+          <td class="table-primary" style="color:cornflowerblue">Alamosa River</td>
+        </tr>
+        <tr>
+          <th scope="row">3</th>
+          <td class="table-success"style="color:darkcyan">D</td>
+          <td class="table-success"style="color:darkmagenta">Diptera</td>
+          <td class="table-success"style="color:darkmagenta">Dhaka</td>
+          <td class="table-success"style="color:darkmagenta">Dearborn River</td>
+        </tr>
+        <tr>
+          <th scope="row">4</th>
+          <td  class="table-warning"style="color:darkcyan">B</td>
+          <td  class="table-warning"style="color:darkslategray" >Blattodea</td>
+          <td  class="table-warning"style="color:darkslategray">Brasilia</td>
+          <td  class="table-warning"style="color:darkslategray">Bark River</td>
+        </tr>
+        <tr>
+          <th scope="row">5</th>
+          <td class="table-light"style="color:darkcyan">H</td>
+          <td class="table-light"style="color:darkgray">Horntails</td>
+          <td class="table-light"style="color:darkgray">Houston</td>
+          <td class="table-light"style="color:darkgray">Hampton River</td>
+        </tr>
+        <tr>
+          <th scope="row">6</th>
+          <td class="table-secondary"style="color:darkcyan"z>S</td>
+          <td class="table-secondary"style="color:green">Scorpion Flies</td>
+          <td class="table-secondary"style="color:green">Shanghai</td>
+          <td class="table-secondary"style="color:green">Saddle River</td>
+        </tr>
+      </tbody>
+        </table>
 </body>
 </html>
