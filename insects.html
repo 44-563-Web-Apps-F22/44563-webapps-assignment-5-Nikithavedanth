@@ -65,7 +65,7 @@ th,td {
             </div>
     </div>
     <p>The second row with insects name shrinks or breaks first. The reason is that  we are using grid class and it has only 6 rows which are filled.Our grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl). This means you can control container and column sizing and behavior by each breakpoint.<p>
-      <div>
+      <div class="container">
 
         <img src="Diptera.jpg" class="img-fluid" max-width: 100%; height=auto  alt="Diptera">
         <img src="Megaloptera.jpg"class="img-fluid" max-width: 100%; height=auto   alt="Megaloptera">
@@ -139,28 +139,30 @@ th,td {
       </tbody>
     </table>
     <div>
+      <label>BUTTONS</label>
           <button type="button" class="btn btn-success">M</button>
           <button type="button" class="btn btn-warning">A</button>
           <button type="button" class="btn btn-danger">D</button>
           <button type="button" class="btn btn-secondary">B</button>
           <button type="button" class="btn btn-info">H</button>
           <button type="button" class="btn btn-dark">S</button>
-      </div>
+      </div><br>
+      <label>BUTTON GROUPS:</label>
           <div class="btn-toolbar" >
           <div class="btn-group" role="group" aria-label="Success" >
             <button type="button" class="btn btn-success">D</button>
             <button type="button" class="btn btn-success">M</button>
             <button type="button" class="btn btn-success">H</button>
-          </div>
-          <div class="alert">
-            <button type="alert" class="alert alert-primary"><span class="label label-default">S</span></button>
-            <button type="alert" class="alert alert-secondary"><span class="label label-default">B</span></button>
-          </div>
-          <div>
-            <button type="button" class="btn btn-danger"><span class="label label-default">A</span></button>
-          </div>
-       
-      </div>
+          </div><br>
+          <div class="btn-group btn-warning label label-alert">
+         <button type="button" class="btn">S</button>
+         <button type="button" class="btn">B</button>
+         </div><br>
+      <div>
+        <button type="button" class="btn btn-danger">A</button>
+      </div><br>
+      
+      
       
 </body>
 </html>
