@@ -8,14 +8,18 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" 
     integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
     <style>
-      img {
+      .container-fluid {
         border: 1px solid #ddd;
         border-radius: 4px;
         padding: 5px;
-        width: 500px;
+    
+      }
+      .dropdown{
+        padding:10px;
+        border: 1px solid black;
       }
       
-      img:hover {
+      .img-thumbnail:hover {
         box-shadow: 0 0 2px 1px blueviolet;
       }
       th:hover{
@@ -93,12 +97,11 @@ th,td {
     </div>
     <p>The second row with insects name shrinks or breaks first. The reason is that  we are using grid class and it has only 6 rows which are filled.Our grid supports six responsive breakpoints. Breakpoints are based on min-width media queries, meaning they affect that breakpoint and all those above it (e.g., .col-sm-4 applies to sm, md, lg, xl, and xxl). This means you can control container and column sizing and behavior by each breakpoint.<p>
       <div class="container">
-
-        <img src="Diptera.jpg" class="img-fluid" max-width: 100%; height=auto  alt="Diptera">
-        <img src="Megaloptera.jpg"class="img-fluid" max-width: 100%; height=auto   alt="Megaloptera">
-        <img src="Horntail.jpg" class="img-fluid" max-width: 100%; height=auto alt="Horntail">
+        <img src="Diptera.jpg" class="img-fluid"  width=400 height=500 alt="Diptera">
+        <img src="Megaloptera.jpg"class="img-fluid" width=400 height=500   alt="Megaloptera">
+        <img src="Horntail.jpg" class="img-fluid"  width=400  height=500  alt="Horntail">
       </div>
-      <div class="container-fluid">
+      <div class="container-fluid" style="text-align:center">
         <a target="_blank" href="Diptera.jpg">
         <img src="Diptera.jpg" class="img-thumbnail" alt="Diptera">
         </a>
@@ -165,8 +168,9 @@ th,td {
         </tr>
       </tbody>
     </table>
-    <div>
+   
       <label>BUTTONS</label>
+      <div>
           <button type="button" class="btn btn-success">M</button>
           <button type="button" class="btn btn-warning">A</button>
           <button type="button" class="btn btn-danger">D</button>
@@ -181,29 +185,26 @@ th,td {
             <button type="button" class="btn btn-success">M</button>
             <button type="button" class="btn btn-success">H</button>
           </div><br>
-          <div class="btn-group btn-warning label label-alert">
-         <button type="button" class="btn">S</button>
-         <button type="button" class="btn">B</button>
+          <div class="btn-group" role="group" aria-label="Basic example">
+         <button type="button" class="btn btn-warning">S</button>
+         <button type="button" class="btn btn-warning">B</button>
          </div><br>
-      <div>
+     <div class="btn-group" role="group" aria-label="Basic example">
         <button type="button" class="btn btn-danger">A</button>
       </div><br>
-<hr>
+      </div>
+
       <div class="dropdown">
         <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenubar" data-bs-toggle="dropdown" aria-expanded="false">
           Dropdown button
         </a>
-    
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenubar">
-          <li><a class="dropdown-item" href="basic.html">Basic</a></li>
-          <li><a class="dropdown-item" href="advanced.html">Advance</a></li>
-        </ul>
         <caption>DROP DOWN BAR</caption><br>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenubar">
+          <li><a class="dropdown-item" href="basic.html">Basic link</a></li>
+          <li><a class="dropdown-item" href="advanced.html">Advanced link</a></li>
+        </ul>
       </div>
-      
-      <hr>
-      
-      <form>
+<form>
         <div class="form-group">
           <label for="InputEmail" class="form-label">Email address</label>
           <input type="email address" placeholder="Enter your email address:" class="form-control" id="InputEmail" aria-describedby="emailHelp">
